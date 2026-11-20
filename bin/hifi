@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# hifi – play local music from the terminal: fzf shows the library, mpv makes the sound.
+set -euo pipefail
+app="hifi 0.1.0"  # name and version shown at the top of the UI
+
+# Your turn :)
+#  1. Start mpv in the background with --idle --input-ipc-server and talk to it with jq + socat
+#  2. List the audio files in ~/Music in fzf
+#  3. Let fzf's key bindings call this script ($self _play {}, $self _cmd ...)
+#  4. A ticker that pushes "now playing" into fzf's footer via --listen
